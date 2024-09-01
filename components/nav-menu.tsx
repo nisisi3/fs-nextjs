@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
+import { SignInButton } from "./buttons";
 
 export default function NavMenu() {
   return (
-    <div className="navbar bg-black">
+    <div className="navbar bg-black px-12">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost">
@@ -34,7 +35,7 @@ export default function NavMenu() {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        <SignInButton />
       </div>
     </div>
   );
